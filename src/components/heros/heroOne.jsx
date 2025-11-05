@@ -1,6 +1,5 @@
-import SlideUp from '@/utils/animations/slideUp'
-import Link from 'next/link'
-import React from 'react'
+import SlideUp from "@/utils/animations/slideUp";
+import Link from "next/link";
 
 const HeroOne = () => {
   return (
@@ -15,22 +14,31 @@ const HeroOne = () => {
                 </SlideUp>
                 <SlideUp delay={2}>
                   <p>
-                    High-quality, relevant content is essential for engaging &amp;
-                    retaining online audiences.
+                    High-quality, relevant content is essential for engaging
+                    &amp; retaining online audiences.
                   </p>
                 </SlideUp>
               </div>
-              <SlideUp delay={3} className="buttons d-sm-flex align-items-center">
+              <SlideUp
+                delay={3}
+                className="buttons d-sm-flex align-items-center"
+              >
                 <Link href={"/services"} className="common__btn buttons_file">
                   <span>View Our Service</span>
                   <i className="fa-solid fa-arrow-right"></i>
                 </Link>
-                <Link href={"/about"} className="common__btn buttons_outline mt-4 mt-sm-0">
+                <Link
+                  href={"/about"}
+                  className="common__btn buttons_outline mt-4 mt-sm-0"
+                >
                   <span>More About Us</span>
                   <i className="fa-solid fa-arrow-right"></i>
                 </Link>
               </SlideUp>
-              <SlideUp delay={4} className="banner__content_number d-flex justify-content-between" >
+              <SlideUp
+                delay={4}
+                className="banner__content_number d-flex justify-content-between"
+              >
                 <div>
                   <h4>45+</h4>
                   <p>Years Experience</p>
@@ -48,10 +56,22 @@ const HeroOne = () => {
           </div>
           <div className="col-lg-4">
             <div className="banner__right">
-              <img src="/images/banner/Shape.svg" alt="img" className="bg__shap" />
-              <img src="/images/banner/Video.svg" alt="img" className="bg__video" />
+              <img
+                src="/images/banner/Shape.svg"
+                alt="img"
+                className="bg__shap"
+              />
+              <img
+                src="/images/banner/Video.svg"
+                alt="img"
+                className="bg__video"
+              />
               <div>
-                <img src="/images/banner/Rectangle96.png" alt="img" className="bg__img" />
+                <img
+                  src="/images/banner/Rectangle96.png"
+                  alt="img"
+                  className="bg__img"
+                />
               </div>
             </div>
           </div>
@@ -66,8 +86,7 @@ const HeroOne = () => {
         {/* </div> */}
       </div>
     </section>
+  );
+};
 
-  )
-}
-
-export default HeroOne
+export default HeroOne;

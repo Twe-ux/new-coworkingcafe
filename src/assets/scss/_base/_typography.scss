@@ -133,6 +133,30 @@ p {
   }
 }
 
+.mb__100 {
+  margin-bottom: 100px;
+
+  @include breakpoint(lg) {
+    margin-bottom: 80px;
+  }
+
+  @include breakpoint(md) {
+    margin-bottom: 60px;
+  }
+}
+
+.mb__120 {
+  margin-bottom: 120px;
+
+  @include breakpoint(lg) {
+    margin-bottom: 100px;
+  }
+
+  @include breakpoint(md) {
+    margin-bottom: 80px;
+  }
+}
+
 .title {
   color: var(--grayWhite-clr);
   font-size: 54px;
